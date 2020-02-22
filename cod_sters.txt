@@ -1,0 +1,67 @@
+ //DePeNewCoord -> piesa de coordonatele la care vrem sa mutam
+                //DePeOldCoord -> piesa de coordonatele de unde  vrem sa mutam
+
+                /*
+        for (int i = 0; i < 8; i++) {
+                    for (int j = 0; j < 8; j++) {
+                        for (Map.Entry<Pozitie, Observer> DePeNewCoord : tabla.entrySet()) {
+                            if (DePeNewCoord.getKey().getX() == i && DePeNewCoord.getKey().getY() == j) {
+
+                                if (DePeNewCoord.getKey().getX() == newcordx && DePeNewCoord.getKey().getY() == newcordy) {
+
+                                    if (DePeNewCoord.getValue().getValue() != 0) {
+                                        for (Map.Entry<Pozitie, Observer> DePeOldCoord : tabla.entrySet()) {
+                                            //aflam din nou piesa pe care vrem sa o mutam
+                                            if (DePeOldCoord.getKey().getX() == cordx && DePeOldCoord.getKey().getY() == cordy) {
+                                                // verificam daca piesa de la noile coord e din aceeasi echipa
+                                                if (DePeNewCoord.getValue().getPlayer() == DePeOldCoord.getValue().getPlayer()) {
+                                                    System.out.println("nu se poate muta intr-un loc in care aveti o piesa de a voastra!");
+                                                } else {
+                                                    Pozitie newPozitii = new Pozitie(newcordx, newcordy);
+                                                    Observer piesaDeMutat = DePeOldCoord.getValue();
+                                                    Pozitie oldPozitii = new Pozitie(cordx, cordy);
+                                                    PiesaNull piesaNull = new PiesaNull(oldPozitii.getX(), oldPozitii.getY());
+                                                    tabla.remove(newPozitii);
+                                                    tabla.put(newPozitii, piesaDeMutat);
+                                                    tabla.remove(oldPozitii);
+                                                    tabla.put(oldPozitii, piesaNull);
+                                                    System.out.println("s-a mutat");
+                                                    afisare();
+                                                }
+                                            }
+                                        }
+                                    } else if (DePeNewCoord.getValue().getValue() == 0) {
+
+//                                        for (Map.Entry<Pozitie, Observer> DePeOldCoord : tabla.entrySet()) {
+//
+//                                            if (DePeOldCoord.getKey().getX() == cordx && DePeOldCoord.getKey().getY() == cordy) {
+//
+//                                                Pozitie newPozitii = new Pozitie(newcordx, newcordy);
+////                                                Observer piesaDeMutat = DePeOldCoord.getValue();
+//                                                Pion piesaDeMutat = new Pion(newcordx, newcordy,playerPiesa);
+////                                                piesaDeMutat.setCoords(newcordx,newcordy);
+//
+//                                                Pozitie oldPozitii = new Pozitie(cordx, cordy);
+//                                                PiesaNull piesaNull = new PiesaNull(cordx, cordy);
+////                                                System.out.println("1");
+////                                                afisarePozitiiFiecare();
+//
+//                                                sterge(oldPozitii);
+//
+//                                                afisare();
+//
+//
+//                                                break;
+//                                            }
+//                                        }
+                                        Pozitie oldPozitii = new Pozitie(cordx, cordy);
+                                        sterge(oldPozitii);
+                                        afisare();
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                */
